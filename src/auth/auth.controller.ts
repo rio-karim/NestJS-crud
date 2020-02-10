@@ -11,6 +11,8 @@ import { AuthService } from './auth.service';
 import { AuthGuard } from '@nestjs/passport';
 import { User } from './user.entity';
 import { GetUser } from './get-user.decorator';
+import { PassportModule } from '@nestjs/passport';
+
 @Controller('auth')
 export class AuthController {
   constructor(private authService: AuthService) {}
